@@ -23,3 +23,9 @@
  
 - To run a code in a solidity contract without any testing, we use an "unchecked" method and add the inner statement.
 - To display a unint/int in hex mode, use "console.logBytes32();"
+
+## Storage Variables
+Solidity store variables of a contract scope in a 32 byte(256 bits) contiguous storage(state) slots. This is important to reduce the amount of money(Gas) needed to read/writing the storage slot of a contract in the Ethereum network.
+
+Functions in Solidity are designed to be memory efficient. To implement this efficiency, most contract programmers implement low leveling programming in their solidity code. One of the following is using Etherium Virtual Machine(EVM) Opcodes.
+Most undeclared variables are assumed to contain 0 in their storage except variables with the "constant" modifier where they shift the start of the storage variable with the size required to store the constant variable.
