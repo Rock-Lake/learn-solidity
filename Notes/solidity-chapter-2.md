@@ -14,8 +14,8 @@ Rever
 - A contract has the following syntax:
 ```
 contract X{
-    address deployer;
-    address other Contract
+    address deployer; //160 bits long
+    address other Contract;
 }
     constructor(address _otherContract){
         deployer = msg.sender;
@@ -23,6 +23,24 @@ contract X{
     }
 ```
 - Any function in a contract should be explicitly defined as `payable` in its [state mutability modifier](../Notes/solidity-chapter-1.md#functions)
+- The `.call` syntax is `.call{ gas, value }(calldata)`
+
+```js
+contract X {
+  address otherContract;
+
+  constructor(address _otherContract) payable {
+    otherContract = _otherContract;
+    (bool success, )= _otherContract.call{ value: msg.value }("");
+    require(success);
+  }
+}
+```
+- This stores the `msg.value` as the amount of ether sent to pay function.
+- To simply receive the gas required to run the function, we use a special function called `receive()`.
+
+**NB:** The smallest value sent in a message call is 1 wei, which is $1\over 10^{18}$ of an ether.
+- Contract can destroy themselves by using the `selfdestruct` special function. This accepts addresses to send the total ether in the contract to a specifc address.
 - a contract can REVERT a call, nagating all state changes.
     -each calling contract can choose to handle that success or REVERT as well.
 
