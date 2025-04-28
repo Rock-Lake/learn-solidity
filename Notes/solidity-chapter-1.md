@@ -1,4 +1,6 @@
 # Chapter 1
+
+<a name="Value Types"></a>
 ## Value Types
 
 - **uint** - unsigned integer, it doesn't have a sign for positive or negative numbers. This form is a alias(shorthand) form of unint255, the maximum number of digits in binary form for a uint.
@@ -24,6 +26,7 @@
 - To run a code in a solidity contract without any testing, we use an "unchecked" method and add the inner statement.
 - To display a unint/int in hex mode, use "console.logBytes32();"
 
+<a name="Storage Variables"></a>
 ## Storage Variables
 
 Solidity store variables of a contract scope in a 32 byte(256 bits) contiguous storage(state) slots. This is important to reduce the amount of money(Gas) needed to read/writing the storage slot of a contract in the Ethereum network.
@@ -31,6 +34,7 @@ Solidity store variables of a contract scope in a 32 byte(256 bits) contiguous s
 Functions in Solidity are designed to be memory efficient. To implement this efficiency, most contract programmers implement low leveling programming in their solidity code. One of the following is using Etherium Virtual Machine(EVM) Opcodes.
 Most undeclared variables are assumed to contain 0 in their storage except variables with the "constant" modifier where they shift the start of the storage variable with the size required to store the constant variable.
 
+<a name="Functions"></a>
 ## Functions
 
 Functions are blocks of code in a Etherium contract designed to perform a certain action. This action can either have one of four visibility keywords:
