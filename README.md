@@ -3,7 +3,7 @@
 ## Course Selected  
 **Course:** [Learn Solidity by Alchemy University](https://www.alchemy.com/university/courses/solidity)  
 **Group Members:**  
-- Member 1: [Name](GitHubProfileLink)  
+- Member 1: [Petros Lakew](UGR/22596/13)(Rock-Lake)  
 - Member 2: [Name](GitHubProfileLink)  
 - Member 3: [Name](GitHubProfileLink)  
 - Member 4: [Name](GitHubProfileLink)  
@@ -13,16 +13,17 @@
 This project involves completing a beginner's course in Solidity and collaboratively developing smart contracts. We will commit our progress and share resources in this public GitHub repository.  
 
 ## Repository Structure  
-/Notes # Contains all group notes taken during the course
-/Code # Contains all smart contract code developed
-/Screenshots # Contains screenshots of progress and completed exercises
-/Resources # Contains any additional resources used during the project
+- /Notes # Contains all group notes taken during the course
+- /Exercices # Contains all the exercises completed during the course
+- /Code # Contains all smart contract code developed
+- /Screenshots # Contains screenshots of progress and completed exercises
+- /Resources # Contains any additional resources used during the project
 
 
 ## Completion Milestones  
-- **March 15, 2025:** Signed up for the course  
-- **April 10, 2025:** Completed Module 1  
-- **April 18, 2025:** Completed Module 2  
+- **April 12, 2025:** Signed up for the course  
+- **April 19, 2025:** Completed Module 1  
+- **April 23, 2025:** Completed Module 2  
 - **April 25, 2025:** Completed Module 3  
 - **May 1, 2025:** Final repository check and submission  
 
