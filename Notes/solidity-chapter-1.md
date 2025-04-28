@@ -25,7 +25,29 @@
 - To display a unint/int in hex mode, use "console.logBytes32();"
 
 ## Storage Variables
+
 Solidity store variables of a contract scope in a 32 byte(256 bits) contiguous storage(state) slots. This is important to reduce the amount of money(Gas) needed to read/writing the storage slot of a contract in the Ethereum network.
 
 Functions in Solidity are designed to be memory efficient. To implement this efficiency, most contract programmers implement low leveling programming in their solidity code. One of the following is using Etherium Virtual Machine(EVM) Opcodes.
 Most undeclared variables are assumed to contain 0 in their storage except variables with the "constant" modifier where they shift the start of the storage variable with the size required to store the constant variable.
+
+## Functions
+
+Functions are blocks of code in a Etherium contract designed to perform a certain action. This action can either have one of four visibility keywords:
+- **private:** this function is called from within the contract
+- **internal:** this function is called within the contract, any other functions inheriting this function can call said function
+- **public:** this function can be called from either inside or outside the contract
+- **external:** this function can only be called from outside the contract's EVM. This is used as an entry point for the contract.
+
+and one of three state mutability(changeability) keywords:
+- **pure:** this is similar to "void" modifier in C++, it doesn't read/store anything in the storage variables.
+- **view:** this function can only read storage slots.
+- **payable:** this function can store Ether in the contract.
+
+A solidity function is written as follows:
+```
+function functionName(variable1, variable2,...) visibilityModifier stateModifier returns(variable/datatype){
+    return variable/finalResult;
+}
+```
+One of the main functions in a solidity contract is the **constructor**. This function is called once during the contract's deployment and is used for setting up inital contract values.
