@@ -35,9 +35,9 @@ example:
 
 mappings
 
- -key/value hash lookup.
- -storage only.
- -can not be passed as an argument.
+    -key/value hash lookup.
+    -storage only.
+    -can not be passed as an argument.
 
 
 
