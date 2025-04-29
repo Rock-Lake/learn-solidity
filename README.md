@@ -4,7 +4,7 @@
 **Course:** [Learn Solidity by Alchemy University](https://www.alchemy.com/university/courses/solidity)  
 **Group Members:**  
 - Member 1: [Petros Lakew](https://github.com/Rock-Lake) (UGR/22596/13)  
-- Member 2: [Name](GitHubProfileLink)  
+- Member 2: [Nugusa Wakwaya](https://github.com/NugusaWakwaya) (UGR/23469/13) 
 - Member 3: [Name](GitHubProfileLink)  
 - Member 4: [Name](GitHubProfileLink)  
 - Member 5: [Name](GitHubProfileLink)  
