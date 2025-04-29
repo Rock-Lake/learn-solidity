@@ -3,7 +3,7 @@
 ## Course Selected  
 **Course:** [Learn Solidity by Alchemy University](https://www.alchemy.com/university/courses/solidity)  
 **Group Members:**  
-- Member 1: [Petros Lakew](Rock-Lake) (UGR/22596/13)  
+- Member 1: [Petros Lakew](https://github.com/Rock-Lake) (UGR/22596/13)  
 - Member 2: [Name](GitHubProfileLink)  
 - Member 3: [Name](GitHubProfileLink)  
 - Member 4: [Name](GitHubProfileLink)  
