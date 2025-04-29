@@ -41,9 +41,20 @@ contract X {
 
 **NB:** The smallest value sent in a message call is 1 wei, which is $1\over 10^{18}$ of an ether.
 - Contract can destroy themselves by using the `selfdestruct` special function. This accepts addresses to send the total ether in the contract to a specifc address.
-- a contract can REVERT a call, nagating all state changes.
-    -each calling contract can choose to handle that success or REVERT as well.
 
+## Reverting Functions
+- A contract can REVERT a call, negating all state changes.
+- Each calling contract can choose to handle that success or REVERT as well.
+- A REVERT still spends gas to run the contract.
+- A REVERT has the following syntax:
+```
+function x() {
+    if(condition){
+        revert ;
+    }
+}
+```
+- When a smart contract performs a non-intended action, we can use `assert` to stop said action.
 ## Targeting Functions
 
 Calldata( how to target functions)
