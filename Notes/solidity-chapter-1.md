@@ -1,5 +1,7 @@
 # Chapter 1
 
+Solidity is a high-level programming language used to write smart contracts that run on the Ethereum blockchain, enabling decentralized applications and automated, trustless transactions.
+
 <a name="Value Types"></a>
 ## Value Types
 
