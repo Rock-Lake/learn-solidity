@@ -61,3 +61,5 @@ function functionName(variable1, variable2,...) visibilityModifier stateModifier
 }
 ```
 One of the main functions in a solidity contract is the **constructor**. This function is called once during the contract's deployment and is used for setting up inital contract values.
+
+In general, functions are fundamental building blocks in programming that encapsulate specific actions or logic, allowing code reuse and modular design; in Solidity, they include various visibility and mutability options and often start with a constructor to set up the contract upon deployment.
