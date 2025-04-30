@@ -6,7 +6,7 @@
 - Member 1: [Petros Lakew](https://github.com/Rock-Lake) (UGR/22596/13)  
 - Member 2: [Nugusa Wakwaya](https://github.com/NugusaWakwaya) (UGR/23469/13) 
 - Member 3: [Petros Abebe](https://github.com/nafhati)  (UGR/22522/13)  
-- Member 4: [Name](GitHubProfileLink)  
+- Member 4: [Roba Chimdesa](https://github.com/RobaChimdesa) (UGR/22682/13) 
 - Member 5: [Name](GitHubProfileLink)  
 
 ## Project Overview  
