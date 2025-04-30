@@ -34,6 +34,12 @@ Solidity store variables of a contract scope in a 32 byte(256 bits) contiguous s
 Functions in Solidity are designed to be memory efficient. To implement this efficiency, most contract programmers implement low leveling programming in their solidity code. One of the following is using Etherium Virtual Machine(EVM) Opcodes.
 Most undeclared variables are assumed to contain 0 in their storage except variables with the "constant" modifier where they shift the start of the storage variable with the size required to store the constant variable.
 
+In Solidity, declaring a storage variable is as simple as declaring the variable inside of the contract:
+
+contract Contract {
+	bool myVariable;
+}
+
 <a name="Functions"></a>
 ## Functions
 
