@@ -7,7 +7,7 @@
 - Member 2: [Nugusa Wakwaya](https://github.com/NugusaWakwaya) (UGR/23469/13) 
 - Member 3: [Petros Abebe](https://github.com/nafhati)  (UGR/22522/13)  
 - Member 4: [Roba Chimdesa](https://github.com/RobaChimdesa) (UGR/22682/13) 
-- Member 5: [Name](GitHubProfileLink)  
+- Member 5: [Bontu Dereje ](GitHubProfileLink)  (UGR/22760/13)
 
 ## Project Overview  
 This project involves completing a beginner's course in Solidity and collaboratively developing smart contracts. We will commit our progress and share resources in this public GitHub repository.  
