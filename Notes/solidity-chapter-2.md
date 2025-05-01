@@ -53,7 +53,8 @@ function x() {
         revert ;
     }
 }
-```
+ The constructor for Solidity contracts is quite similar to the constructor in classes of many object-oriented languages. The constructor function is invoked only once during the contract's deployment and never again. It is generally used for setting up initial contract values.```
+
 - When a smart contract performs a non-intended action, we can use `assert` to stop said action.
 ## Targeting Functions
 
