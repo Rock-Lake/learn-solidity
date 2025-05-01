@@ -1,3 +1,16 @@
+Enum Type
+The Enum Type helps us write clean code! 
+
+Consider this example:
+
+if(player.movement == 0) {
+    // player is moving up
+}
+else if(player.movement == 1) {
+    // player is moving left
+}
+
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
