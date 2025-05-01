@@ -53,7 +53,28 @@ function x() {
         revert ;
     }
 }
- The constructor for Solidity contracts is quite similar to the constructor in classes of many object-oriented languages. The constructor function is invoked only once during the contract's deployment and never again. It is generally used for setting up initial contract values.```
+ Solidity Constructors
+In Solidity, the constructor is a special function used for initializing the state of a contract during deployment, similar to constructors in object-oriented programming languages.
+
+Unique Invocation:
+The constructor is called only once — at the moment the contract is deployed.
+
+Purpose:
+It's typically used for setting initial values for state variables, configuring ownership, or any other setup work that should only happen once.
+
+Syntax Example:
+
+solidity
+pragma solidity ^0.8.20;
+
+contract MyContract {
+    uint public value;
+
+    // Constructor function
+    constructor(uint initialValue) {
+        value = initialValue;
+    }
+}
 
 - When a smart contract performs a non-intended action, we can use `assert` to stop said action.
 ## Targeting Functions
