@@ -7,7 +7,7 @@ contract Contract {
     int16 public difference = a - b;
 }
 
-
+/// by Roba
 Create Signed Integers!
 Create three public storage integers a, b, and difference.
 
