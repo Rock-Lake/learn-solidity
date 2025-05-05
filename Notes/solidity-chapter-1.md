@@ -65,3 +65,75 @@ function functionName(variable1, variable2,...) visibilityModifier stateModifier
 One of the main functions in a solidity contract is the **constructor**. This function is called once during the contract's deployment and is used for setting up inital contract values.
 
 In general,In Solidity, functions are blocks of code with specified visibility (private, internal, public, external) and mutability (pure, view, payable), used to define contract behavior, with the constructor serving as a special function that initializes the contract upon deployment
+Solidity is a high-level, statically-typed programming language designed for writing smart contracts on the Ethereum blockchain. It enables decentralized applications (dApps), trustless transactions, and immutable logic.
+
+🔹 Value Types in Solidity
+1. uint / int
+uint: Unsigned integer (only positive values). Alias for uint256.
+
+int: Signed integer (positive and negative values). Alias for int256.
+
+solidity
+Copy
+Edit
+uint age = 30;       // uint256
+int balance = -100;  // int256
+2. bool
+Stores either true or false. Default value is false.
+
+solidity
+Copy
+Edit
+bool isVerified = true;
+3. enum
+Used to define a set of named constants (choices).
+
+solidity
+Copy
+Edit
+enum Direction { Up, Down, Left, Right }
+
+Direction myDirection = Direction.Up;
+Access from another contract:
+
+solidity
+Copy
+Edit
+Example.Direction choice = Example.Direction.Right;
+4. string / bytes / bytes32
+string: Used for UTF-8 encoded text.
+
+bytes: Dynamic array of bytes.
+
+bytes32: Fixed-size (32 bytes) byte array — more gas efficient for short messages.
+
+solidity
+Copy
+Edit
+string name = "Alice";
+bytes data = "Dynamic message";
+bytes32 fixedMsg = "ShortMsg";
+🔹 Constructors in Solidity
+A constructor is a special function that runs only once, at contract deployment. Used to initialize state variables.
+
+solidity
+Copy
+Edit
+contract MyContract {
+    uint public age;
+
+    constructor(uint _age) {
+        age = _age;
+    }
+}
+🔹 Unchecked Blocks
+Use unchecked {} to skip overflow checks and save gas (used for optimization, not testing):
+
+solidity
+Copy
+Edit
+function addUnchecked(uint x, uint y) public pure returns (uint) {
+    unchecked {
+        return x + y;
+    }
+}
